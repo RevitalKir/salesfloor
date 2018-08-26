@@ -1,0 +1,48 @@
+.top-navigation {
+    background: $white;
+    font-weight: $font-weight-normal;
+    left: auto;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.top-navigation__list{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $font-size-base;
+    letter-spacing: 0.22em;
+    margin:0;
+}
+
+.top-navigation__list-item{
+padding: 0 12px;
+
+
+}
+
+.top-navigation__link{
+    color: $gray-700;
+    line-height: 48px;
+    height: 45px;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    &:hover{
+        border-bottom: 3px solid $gray-700;
+        opacity: 0.7;
+       
+        }
+    
+}
+
+.top-navigation--red-link{
+
+    @include link-font ($pink, 600, 12px)
+    
+}
+
+
+
+

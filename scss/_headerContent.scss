@@ -1,0 +1,87 @@
+.page-header__menu{
+    @include flex (row);
+    padding: 25px 30px 5px;
+      position: relative;
+      z-index: auto;
+      height: 70px;
+  }
+
+  .page-header__menu-links-left{
+    @include flex (row);
+    position: absolute;
+    top:18px;
+    right: auto;
+    left: 0;
+    padding:0;
+  }
+
+  
+
+  .link{
+    margin: 0 0 0 28px;
+    text-transform: uppercase;
+    font-size: 11px;
+    vertical-align: top;
+  }
+  
+.menu-links-left__item__stores-link{
+   
+    &:before {
+        @include iconImg (-334px, -76px, 12px, 16px );
+        vertical-align: -3px;
+        margin:-3px 14px 3px 3px;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.page-header__menu-links-right{
+position: absolute;
+    right: 64px;
+    left: auto;
+    bottom: 0px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+ 
+}
+
+
+.menu-links-right__item__search-link {
+    font-size: 14px;
+    &:before {
+        @include iconImg (-334px, -25px, 16px, 16px );
+    
+    }
+
+}
+
+.menu-links-right__item__account-link {
+    margin-right: 15px;
+    min-width: 39px;
+    &:before {
+        @include iconImg (-334px, 0px, 16px, 16px );
+    
+    }
+}
+
+.logo {
+    text-align: center;
+    width:100%;
+    padding:4px 0 0 51px;
+}
+
+.page-header__minicart-wrapper{
+    width: 39px;
+    white-space: nowrap;
+    text-align: right;
+    margin-left: 13px;
+    margin-top:6px;
+}
+
+.page-header__minicart-link{
+    padding-right: 12px;
+    &:before {
+        @include iconImg (-334px, -50px, 15px, 16px );
+    }
+}
